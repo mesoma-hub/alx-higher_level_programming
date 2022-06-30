@@ -65,4 +65,52 @@ Prototypes for functions written in this project:
   string`.
 
 * **3. Print square**
+  * [4-print_square.py](./4-print_square.py): Python function that prints a square using
+  the `#` character.
+  * The paramter `size` represents the height/width of the square.
+  * If `size` is not an `int`, a `TypeError` is raised  with the message,
+  `size must be an integer`.
+  * If `size` is less than `0`, a `ValueError` is raised with the message `size
+  must be >= 0`.
 
+* **4. Text indentation**
+  * [5-text_indentation.py](./5-text_indentation.py): Python function that prints text with
+  indentation.
+  * Two new lines are printed after any `.`, `?`, or `:` character.
+  * If `text` is not a `str`, a `TypeError` is raised with the message `text
+  must be a string`.
+  * No spaces are printed at the beginning or end of each printed line.
+
+* **5. Max integer - Unittest**
+  * [tests/6-max_integer_test.py](./tests/6-max_integer_text.py): Python class/script
+  that runs unittests for the function `def max_integer(list=[]):`
+  (provided by Holberton School).
+
+* **6. Matrix multiplication**
+  * [100-matrix_mul.py](./100-matrix_mul.py): Python function that multiplies two matrices.
+  * Returns a new matrix representing the multiplication of `m_a` by `m_b`.
+  * If either of `m_a` or `m_b` is empty (ie. `== []` or `== [[]]`), a
+  `ValueError` is raised with the message `m_a can't be empty` or `m_b can't
+  be empty`.
+  * If either of `m_a` or `m_b` is not a list, a `TypeError` is raised with
+  the message `m_a must be a list` or `m_b` must be a list.
+  * If either of `m_a` or `m_b` is not a list of lists, a `TypeError` is raised
+  with the message `m_a must be a list of lists` or `m_b must be a list of lists`.
+  * If either of `m_a` or `m_b` is not a list of lists of `int`s or `float`s, a
+  `TypeError` is raised with the message `m_a should contain only integers or
+  floats` or `m_b should contain only integers or floats`.
+  * If either of `m_a` or `m_b` contains rows of different lengths, a `TypeError`
+  is raised with the message `each row of m_a must should be of the same size` or
+  `each row of m_b must should be of the same size`.
+  * If `m_a` and `m_b` cannot be multiplied (ie. row size of `m_a` does not match
+  column size of `m_b`), a `ValueError` is raised with the message `m_a and m_b
+  can't be multiplied`.
+
+* **7. Lazy matrix multiplication**
+  * [101-lazy_matrix_mul.py](./101-lazy_matrix_mul.py): Python function that multiplies
+  two matrices using the module `NumPy`.
+  * Identical in function to [100-matrix_mul.py](./100-matrix_mul.py).
+
+* **8. CPython #3: Python Strings**
+  * [102-python.c](./102-python.c): C function that prints basic information about Python
+  string objects.
